@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 810.543 ; gain = 178.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/system.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (1#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'carry_select_adder' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/carry_select_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ripple_carry' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/ripple_carry.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/full_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'half_adder' [//ad/eng/users/i/n/inwokolo/Desktop/half_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'half_adder' (2#1) [//ad/eng/users/i/n/inwokolo/Desktop/half_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (3#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_carry' (4#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/ripple_carry.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'carry_select_adder' (5#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/carry_select_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'carry_select_subt' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/carry_select_subt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'negate' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/negate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'negate' (6#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/negate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'carry_select_subt' (7#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/carry_select_subt.v:23]
+WARNING: [Synth 8-567] referenced signal 'mode' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'a' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'b' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'sum' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'c_out1' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'diff1' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'c_out2' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'diff2' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+WARNING: [Synth 8-567] referenced signal 'c_out3' should be on the sensitivity list [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (8#1) [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/seven_seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_dec' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/bin_to_dec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_dec' (9#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/bin_to_dec.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/seven_seg.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (10#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/seven_seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system' (11#1) [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/system.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 873.824 ; gain = 241.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 873.824 ; gain = 241.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 873.824 ; gain = 241.430
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc]
+WARNING: [Vivado 12-584] No ports matched 'temp[0]'. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[1]'. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[2]'. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[3]'. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [//ad/eng/users/i/n/inwokolo/Desktop/bite/Nexys4DDR_Master5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 990.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 990.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'mode_a_reg' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/decoder.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'c_out_reg' [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [//ad/eng/users/i/n/inwokolo/Desktop/alu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'hexnum_reg' [//ad/eng/users/i/n/inwokolo/Desktop/bite/design sources/seven_seg.v:148]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 8     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 76    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 12    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module half_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module carry_select_adder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module negate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module carry_select_subt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module bin_to_dec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module seven_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (a1/result_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (a1/result_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (a1/result_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (a1/result_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (s_s1/hexnum_reg[0]) is unused and will be removed from module system.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|seven_seg   | hexnum      | 32x7          | LUT            | 
+|system      | s_s1/hexnum | 32x7          | LUT            | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 990.445 ; gain = 358.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT2   |    18|
+|5     |LUT3   |     9|
+|6     |LUT4   |    15|
+|7     |LUT5   |    28|
+|8     |LUT6   |    44|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    20|
+|11    |LDC    |     4|
+|12    |LDP    |     1|
+|13    |IBUF   |    15|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   180|
+|2     |  a1     |alu       |    29|
+|3     |  d1     |decoder   |    53|
+|4     |  s_s1   |seven_seg |    38|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 996.293 ; gain = 363.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 996.293 ; gain = 247.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 996.293 ; gain = 363.898
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1008.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LDC => LDCE: 4 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 28 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1008.336 ; gain = 654.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1008.336 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/inwokolo/project_5/project_5.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 22:39:44 2020...
